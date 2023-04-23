@@ -21,5 +21,6 @@ public class CamZoomInOut : MonoBehaviour
         mainCam.orthographicSize = camOrthographicSizeZoomOut;
         transform.position = new Vector3(0, 0, -10);
         characterRb.constraints = RigidbodyConstraints2D.None;
+        characterRb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 }
